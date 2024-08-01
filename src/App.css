@@ -1,0 +1,30 @@
+body {
+  background-color: blue;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  background-color: blue;
+  display: flex;
+  height: 100vh;
+  width: 100%; 
+  text-align: center;
+}
+  
+.contanerdash, .containernaveg, .containerstatic {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.contanerdash {
+  background-color: green;
+  flex: 3;
+}
+
+.containernaveg, .containerstatic {
+  background-color: red; 
+  flex: 1;
+}
