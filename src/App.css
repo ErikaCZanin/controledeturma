@@ -1,12 +1,11 @@
 body {
-  background-color: #E5EAF9;
+  background-color: #E4E9F9;
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
 .container {
-  background-color: #E5EAF9;
   display: flex;
   height: 100vh; 
   width: 100%; 
@@ -15,31 +14,125 @@ body {
   box-shadow: 0 5px 4px rgb(226, 230, 246);
 }
 
-.contanerdash, .containernaveg, .containerstatic {
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-}
-
-.contanerdash {
-  background-color: #EFF2F8;
-  flex: 4;
-}
 
 .containernaveg, .containerstatic {
+  display: fixed;
   background-color: #FFFFFF; 
   flex: 1;
 }
 
+.contanerdash {
+  display: flex;
+  flex-direction: column;
+  background-color: #EFF2F8;
+  flex: 4;
+}
+
+.dashnaveg {
+  text-align: center;
+}
+
+.dashconteudo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  flex-wrap: nowrap;
+  gap: px;
+}
+
+.listameterias {
+  position: relative; 
+  height: 200px;
+  width: 980px;
+  left: 16px;
+  font-size: 12px;
+}
+
+.containermaterias {
+  display: flex;
+  flex-wrap: nowrap; /* Garante que os itens não quebrem para a próxima linha */
+  gap: 18px; 
+  height: 170px;
+}
+
+.materias {
+  background-color: #FFFFFF;
+  height: 170px;
+  width: 200px;
+  border-radius: 10px; 
+  text-align: center;
+}
+
+.materias:hover {
+  background-color: #6A75CA;
+  color: #F1F2FA;
+}
+
+
 .containernaveg {
+  flex-direction: column;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
+
+.titulonaveg {
+  position: relative; 
+  height: 50px;
+  width: 150px;
+  left: 50px;
+  top: 20px;
+  font-size: 40px;
+}
+
+.containermenunaveg {
+  position: relative; 
+  height: 470px;
+  width: 120px;
+  top: 10px;
+}
+
+.menunaveg {
+  position: relative; 
+  height: 200px;
+  width: 120px;
+  padding: 10px;
+  left: 50px;
+}
+
+.menunavegconfig {
+  position: relative; 
+  height: 200px;
+  width: 120px;
+  padding: 10px;
+  left: 50px;
+  top: 16px;
+}
+
+.titulomenunaveg {
+ font-size: 11px;
+}
+
+.menunaveg, .menunavegconfig {
+  font-size: 10px;
+}
+
+
 
 .containerstatic {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+
+.titulostatic {
+  position: relative; 
+  height: 50px;
+  width: 150px;
+  left: 50px;
+  top: 20px;
+  font-size: 40px;
+}
+
 
 .listalunos {
   position: relative; 
@@ -48,6 +141,8 @@ body {
   width: 900px;
   padding: 10px;
   box-sizing: border-box;
+  left: 16px;
+  top: 50px;
 }
 
 .alunos-list {
@@ -67,11 +162,15 @@ body {
   align-items: center;
   background-color: #EFF2F8; 
   padding: 1px;
-  border-radius: 5px; 
+  border-radius: 10px; 
 }
 
 .aluno-item:hover {
   background-color: #FFFFFF;
+}
+
+.aluno-item:hover .aluno-nome {
+  font-size: 16px;
 }
 
 
