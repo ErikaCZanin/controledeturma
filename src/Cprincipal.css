@@ -63,15 +63,20 @@
     display: flex;
     align-items: center;
     background-color: #EFF2F8; 
-    padding: 1px;
+    padding: 5px;
     border-radius: 10px; 
+    gap: 10px;
   }
   
   .aluno-item:hover {
     background-color: #FFFFFF;
   }
   
-  .aluno-item:hover .aluno-nome {
+  .aluno-item:hover .aluno-nome .aluno-nota {
+    font-size: 16px;
+  }
+
+  .aluno-item:hover .aluno-nota {
     font-size: 16px;
   }
   
@@ -91,6 +96,13 @@
     font-size: 12px;
   }
   
+
+
   .titulo {
     font-size: 20px;
   }
+  .aluno-nota {
+    background-color: green;
+    font-size: 12px;
+  }
+

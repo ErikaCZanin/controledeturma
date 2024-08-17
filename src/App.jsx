@@ -2,16 +2,8 @@ import './App.css'
 import './Naveg.css'
 import './Claterais.css'
 import './Cprincipal.css'
+import { alunos,calcularMedia,calcularAulasDis } from './Raluno'
 
-const alunos = [
-  { foto: 'https://tse2.explicit.bing.net/th?id=OIP.LW0fGX7DpufHVYoHRes4LgHaE8&pid=Api&P=0&h=180', nome: 'Aluno 1' },
-  { foto: 'https://tse2.explicit.bing.net/th?id=OIP.LW0fGX7DpufHVYoHRes4LgHaE8&pid=Api&P=0&h=180', nome: 'Aluno 1' },
-  { foto: 'https://tse2.explicit.bing.net/th?id=OIP.LW0fGX7DpufHVYoHRes4LgHaE8&pid=Api&P=0&h=180', nome: 'Aluno 1' },
-  { foto: 'https://tse2.explicit.bing.net/th?id=OIP.LW0fGX7DpufHVYoHRes4LgHaE8&pid=Api&P=0&h=180', nome: 'Aluno 1' },
-
-
-
-]
 
 function App() {
   return (
@@ -62,7 +54,9 @@ function App() {
             {alunos.map((aluno, index) => (
               <div key={index} className='aluno-item'>
                 <img src={aluno.foto} alt={aluno.nome} className='aluno-foto' />
-                <p className='aluno-nome'>{aluno.nome}</p>
+                <p className='aluno-nome'>{aluno.nome + ' ' + aluno.sobNome}</p>
+                <p className='aluno-nota'>{calcularMedia(aluno)}</p>
+                <p className='aluno-nota'>{calcularAulasDis(aluno)}</p>
               </div>
             ))}
           </div>
