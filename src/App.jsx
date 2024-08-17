@@ -1,5 +1,7 @@
 import './App.css'
 import './Naveg.css'
+import './Claterais.css'
+import './Cprincipal.css'
 
 const alunos = [
   { foto: 'https://tse2.explicit.bing.net/th?id=OIP.LW0fGX7DpufHVYoHRes4LgHaE8&pid=Api&P=0&h=180', nome: 'Aluno 1' },

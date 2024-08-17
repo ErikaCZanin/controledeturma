@@ -1,0 +1,82 @@
+/* Containers laterais */
+.containernaveg, .containerstatic {
+    display: fixed;
+    background-color: #FFFFFF; 
+    flex: 1;
+  }
+  
+  .contanerdash {
+    display: flex;
+    flex-direction: column;
+    background-color: #EFF2F8;
+    flex: 4;
+  }
+  
+  /* Container lateral esquerdo*/
+  .containernaveg {
+    flex-direction: column;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .titulonaveg {
+    position: relative; 
+    height: 50px;
+    width: 150px;
+    left: 50px;
+    top: 20px;
+    font-size: 40px;
+  }
+  
+  .containermenunaveg {
+    position: relative; 
+    height: 470px;
+    width: 120px;
+    top: 10px;
+  }
+  
+  .menunaveg {
+    position: relative; 
+    height: 200px;
+    width: 120px;
+    padding: 10px;
+    left: 50px;
+  }
+  
+  .menunavegconfig {
+    position: relative; 
+    height: 200px;
+    width: 120px;
+    padding: 10px;
+    left: 50px;
+    top: 16px;
+  }
+  
+  .titulomenunaveg {
+   font-size: 11px;
+  }
+  
+  .menunaveg, .menunavegconfig {
+    font-size: 10px;
+  }
+  
+  /* Container laterial direito*/
+  .containerstatic {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .titulostatic {
+    position: relative; 
+    height: 50px;
+    width: 150px;
+    left: 50px;
+    top: 20px;
+    font-size: 40px;
+  }
+  
+   /* Contaner busca */
+  .dashnaveg {
+    text-align: center;
+  }
+  
