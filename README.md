@@ -1,10 +1,14 @@
 # Controle de turmas
 
-Modelo simples de controle e acompanhamento de alunos em turmas 
+Modelo simples de controle e acompanhamento de aulas em turmas
 
-Conteúdo 
+Conteúdo
+- Espaços e bordas de telas
+- Menus laterais
+- Listas de alunos e matérias
+- Cálculo de notas e aulas realizadas/pendentes
 
-- Espaços e bordas de telas 
-- Menus laterais 
-- Listas de alunos e matérias 
-- Calculo de nota e aulas realizadas/pendentes 
+
+
+
+# React + Vite
